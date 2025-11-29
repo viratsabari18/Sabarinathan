@@ -1,4 +1,4 @@
-// App.tsx - Fixed bottom black line issue
+// App.tsx - Fixed with no white flash and removed footer border
 import React, { useState, useEffect } from 'react'
 import portfolioDataDefault from './data/portfolioData'
 import Navbar from './components/Navbar'
@@ -13,15 +13,11 @@ export default function App() {
   const [data] = useState(portfolioDataDefault)
   const [isLoading, setIsLoading] = useState(true)
 
-  // Fix for white flash and black line
+  // Fix for white flash on mobile
   useEffect(() => {
-    // Set background immediately to match exactly
-    document.documentElement.style.background = 'linear-gradient(135deg, #0f1729 0%, #1e3a8a 50%, #0f1729 100%)'
-    document.body.style.background = 'linear-gradient(135deg, #0f1729 0%, #1e3a8a 50%, #0f1729 100%)'
+    // Prevent white flash by ensuring background is applied immediately
+    document.documentElement.style.background = '#0f1729'
     document.documentElement.style.overflowX = 'hidden'
-    document.body.style.margin = '0'
-    document.body.style.padding = '0'
-    document.body.style.minHeight = '100vh'
     
     const timer = setTimeout(() => {
       setIsLoading(false)
@@ -37,55 +33,25 @@ export default function App() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden">
-        {/* Same blur background elements as main page */}
-        <div className="fixed inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/4 w-60 h-60 bg-slate-500/5 rounded-full blur-3xl"></div>
-        </div>
-        
-        {/* Loading animation */}
-        <div className="flex items-center justify-center min-h-screen">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="flex flex-col items-center space-y-4"
-          >
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-              className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full"
-            />
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="text-blue-300 text-lg font-semibold"
-            >
-              Loading...
-            </motion.p>
-          </motion.div>
-        </div>
-      </div>
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900" />
     )
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden">
-      {/* Enhanced CSS fix for black line */}
+      {/* Preload background fix */}
       <style>
         {`
           html, body {
-            background: linear-gradient(135deg, #0f1729 0%, #1e3a8a 50%, #0f1729 100%);
+            background: #0f1729;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            min-height: 100vh;
           }
-          #root {
-            min-height: 100vh;
-  `}
+          * {
+            box-sizing: border-box;
+          }
+        `}
       </style>
       
       <Navbar />
@@ -320,8 +286,8 @@ export default function App() {
         </div>
       </main>
       
-      {/* Fixed footer - extended background */}
-      <footer className="relative z-10 text-center py-6 sm:py-8 text-gray-400 bg-gradient-to-b from-transparent to-slate-900/50">
+      {/* Fixed footer - removed border line */}
+      <footer className="relative z-10 text-center py-6 sm:py-8 text-gray-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <p className="text-xs sm:text-sm">Built with React, TypeScript, Tailwind & Framer Motion</p>
           <div className="flex justify-center space-x-4 sm:space-x-6 mt-2 sm:mt-3">
