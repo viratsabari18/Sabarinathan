@@ -47,7 +47,7 @@ const portfolioData: PortfolioData = {
     address: "Musiri,Trichy,Tamilnadu",
     linkedin: "sabarinathan-s"
   },
-  profileSummary: "Passionate Full Stack Developer with 1 years of experience in building scalable mobile and web applications. Specialized in Flutter, React, and modern web technologies. Strong expertise in cross-platform development, API integration, and delivering high-performance solutions. Always eager to learn new technologies and solve complex problems.",
+  profileSummary: "Passionate Full Stack Developer with 1.5 years of experience in building scalable mobile and web applications. Specialized in Flutter, React, and modern web technologies. Strong expertise in cross-platform development, API integration, and delivering high-performance solutions. Always eager to learn new technologies and solve complex problems.",
   homeSummary: "I transform ideas into powerful digital experiences. With expertise in Flutter, React, and modern web technologies, I build applications that are not just functional but delightful to use. My passion lies in creating solutions that make a real impact.",
   education: [
     {
@@ -69,14 +69,14 @@ const portfolioData: PortfolioData = {
       position: "Mobile App Developer",
       period: "2025 - PRESENT",
       points: [
-        "Led the end-to-end development and deployment of cross-platform mobile and web applications using Flutter, Svelte, and GraphQL, enhancing overall performance and user experience.",
+        "Led the end-to-end development and deployment of cross-platform mobile and web applications using Flutter,Go,React and GraphQL, enhancing overall performance and user experience.",
         "Implemented scalable architecture and efficient API integrations, streamlining data flow across multiple modules for smooth functionality.",
         "Collaborated with cross-functional teams to design and deliver intuitive, high-quality interfaces aligned with business goals and user needs."
       ]
     }
   ],
   skills: [
-    "Flutter", "Svelte", "React", "TypeScript", "GraphQL",
+    "Flutter","Go","React","Svelte", "TypeScript", "GraphQL",
     "REST API", "Node.js", "SQL", "Dart", "JavaScript"
   ],
   projects: [
@@ -88,17 +88,17 @@ const portfolioData: PortfolioData = {
         "Integrated GraphQL APIs for dynamic data handling, improving responsiveness and real-time updates throughout the app.",
         "Designed and optimized modular UI components, enabling scalable development and consistent design across multiple features."
       ],
-      tools: ["Flutter", "GraphQL", "Dart"]
+      tools: ["Flutter","Go" ,"GraphQL", "Dart"]
     },
     {
       name: "Brewszila CMS",
       description: "Web-based content management system",
       points: [
-        "Developed a Svelte-based web dashboard to manage outlets, menus, documents, and user data through a clean and responsive interface.",
+        "Developed a React-based web dashboard to manage outlets, menus, documents, and user data through a clean and responsive interface.",
         "Implemented GraphQL integrations and modular services, ensuring secure and efficient data operations across multiple modules.",
         "Enhanced admin workflows with real-time validations, file uploads, and automated syncing, improving overall system usability and reliability."
       ],
-      tools: ["Svelte", "GraphQL", "JavaScript"]
+      tools: ["Raect","Go","GraphQL", "JavaScript"]
     }
   ],
   tools: [

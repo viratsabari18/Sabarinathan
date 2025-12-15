@@ -4,17 +4,22 @@ import { motion } from 'framer-motion'
 
 // Icon mapping for skills
 const skillIcons: { [key: string]: string } = {
-  'Flutter': 'fas fa-mobile-alt',
- 
-  'Svelte': 'fas fa-code',
+
+  'Flutter': 'fas fa-mobile-screen',        // Mobile app focus
+  'Dart': 'fas fa-code',                     // No official Dart FA icon
+  'Go': 'fas fa-gears',                      // Backend / systems language
+
   'React': 'fab fa-react',
-  'TypeScript': 'fab fa-js-square',
-  'GraphQL': 'fas fa-project-diagram',
-  'REST API': 'fas fa-cloud',
+  'Svelte': 'fas fa-bolt',                   // Lightweight & fast framework
+  'TypeScript': 'fas fa-file-code',          // Strongly-typed JS
+  'JavaScript': 'fab fa-js',
+
   'Node.js': 'fab fa-node-js',
-  'SQL': 'fas fa-database',
-  'Dart': 'fas fa-code',
-  'JavaScript': 'fab fa-js'
+  'REST API': 'fas fa-cloud-arrow-up',       // API / networking
+  'GraphQL': 'fas fa-diagram-project',       // Data relationships
+  'SQL': 'fas fa-database'
+
+
 }
 
 // Icon mapping for tools
