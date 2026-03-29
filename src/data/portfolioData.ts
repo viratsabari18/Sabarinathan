@@ -80,31 +80,52 @@ const portfolioData: PortfolioData = {
     "REST API", "Node.js", "SQL", "Dart", "JavaScript"
   ],
   projects: [
-    {
-      name: "Brewszila App",
-      description: "Cross-platform mobile application",
-      points: [
-        "Developed a cross-platform mobile application using Flutter, delivering a seamless and engaging user experience across Android and iOS.",
-        "Integrated GraphQL APIs for dynamic data handling, improving responsiveness and real-time updates throughout the app.",
-        "Designed and optimized modular UI components, enabling scalable development and consistent design across multiple features."
-      ],
-      tools: ["Flutter","Go" ,"GraphQL", "Dart"]
-    },
-    {
-      name: "Brewszila CMS",
-      description: "Web-based content management system",
-      points: [
-        "Developed a React-based web dashboard to manage outlets, menus, documents, and user data through a clean and responsive interface.",
-        "Implemented GraphQL integrations and modular services, ensuring secure and efficient data operations across multiple modules.",
-        "Enhanced admin workflows with real-time validations, file uploads, and automated syncing, improving overall system usability and reliability."
-      ],
-      tools: ["Raect","Go","GraphQL", "JavaScript"]
-    }
-  ],
-  tools: [
-    "Postman/Bruno", "Hasura", "TablePlus", "PostgreSQL",
-    "Keyclock", "Firebase"
-  ]
+  {
+    name: "Brewszila App",
+    description: "Cross-platform mobile application",
+    points: [
+      "Developed a cross-platform mobile application using Flutter, delivering a seamless and engaging user experience across Android and iOS.",
+      "Integrated GraphQL APIs for dynamic data handling, improving responsiveness and real-time updates throughout the app.",
+      "Designed and optimized modular UI components, enabling scalable development and consistent design across multiple features."
+    ],
+    tools: ["Flutter","Go" ,"GraphQL", "Dart"]
+  },
+  {
+    name: "Brewszila CMS",
+    description: "Web-based content management system",
+    points: [
+      "Developed a React-based web dashboard to manage outlets, menus, documents, and user data through a clean and responsive interface.",
+      "Implemented GraphQL integrations and modular services, ensuring secure and efficient data operations across multiple modules.",
+      "Enhanced admin workflows with real-time validations, file uploads, and automated syncing, improving overall system usability and reliability."
+    ],
+    tools: ["React","Go","GraphQL", "JavaScript"]
+  },
+
+  // ✅ Newly added projects (appended below)
+  {
+    name: "FieldForce Offline First App",
+    description: "Offline-first task management mobile application",
+    points: [
+      "Developed a production-ready offline-first Flutter application enabling seamless task management with automatic background synchronization between local storage and cloud.",
+      "Designed and implemented a queue-based synchronization architecture (CREATE, UPDATE, DELETE) ensuring reliable data consistency during intermittent or no internet connectivity.",
+      "Utilized Hive for efficient local database storage and Firebase Firestore for cloud persistence, enabling fast offline access and scalable backend integration.",
+      "Built a background SyncManager service to process queued operations and handle real-time synchronization based on network state detection.",
+      "Implemented reactive UI updates using GetX state management, including live sync status indicators and dynamic filtering/search functionality."
+    ],
+    tools: ["Flutter", "Dart", "Hive", "Firebase Firestore", "GetX"]
+  },
+  {
+    name: "Task & Attendance Management System",
+    description: "Full-stack employee attendance and task tracking system",
+    points: [
+      "Developed an end-to-end attendance management system with Flutter frontend and Go backend supporting secure employee check-in and check-out functionality.",
+      "Engineered RESTful APIs using Gorilla Mux and GORM, ensuring clean architecture and scalable database operations.",
+      "Implemented JWT-based authentication and role-based authorization to secure endpoints and protect sensitive employee data.",
+      "Designed efficient backend workflows to manage attendance logs, user roles, and task tracking with high reliability."
+    ],
+    tools: ["Flutter", "Go", "GORM", "Gorilla Mux", "JWT", "REST API"]
+  }
+],
 };
 
 export default portfolioData;
