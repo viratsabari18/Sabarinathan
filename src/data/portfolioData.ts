@@ -1,4 +1,5 @@
-// data/portfolioData.ts - Updated with Bangalore location
+// data/portfolioData.ts
+
 export interface Education {
   period: string;
   institution: string;
@@ -30,7 +31,7 @@ export interface PortfolioData {
     linkedin: string;
   };
   profileSummary: string;
-  homeSummary: string; // New field for different home content
+  homeSummary: string;
   education: Education[];
   experience: Experience[];
   skills: string[];
@@ -44,11 +45,16 @@ const portfolioData: PortfolioData = {
     title: "FULL STACK DEVELOPER",
     phone: "+91 9345772036",
     email: "sabarivirat2@gmail.com",
-    address: "Musiri,Trichy,Tamilnadu",
+    address: "Musiri, Trichy, Tamilnadu",
     linkedin: "sabarinathan-s"
   },
-  profileSummary: "Passionate Full Stack Developer with 1.5 years of experience in building scalable mobile and web applications. Specialized in Flutter, React, and modern web technologies. Strong expertise in cross-platform development, API integration, and delivering high-performance solutions. Always eager to learn new technologies and solve complex problems.",
-  homeSummary: "I transform ideas into powerful digital experiences. With expertise in Flutter, React, and modern web technologies, I build applications that are not just functional but delightful to use. My passion lies in creating solutions that make a real impact.",
+
+  profileSummary:
+    "Passionate Full Stack Developer with 1.5 years of experience in building scalable mobile and web applications. Specialized in Flutter, React, and modern web technologies. Strong expertise in cross-platform development, API integration, and delivering high-performance solutions.",
+
+  homeSummary:
+    "I transform ideas into powerful digital experiences. With expertise in Flutter, React, and modern web technologies, I build applications that are not just functional but delightful to use.",
+
   education: [
     {
       period: "2021-2024",
@@ -63,69 +69,90 @@ const portfolioData: PortfolioData = {
       score: "PER: 83%"
     }
   ],
+
   experience: [
     {
       company: "Brewszila Technologies Pvt. Ltd.",
       position: "Mobile App Developer",
       period: "2025 - PRESENT",
       points: [
-        "Led the end-to-end development and deployment of cross-platform mobile and web applications using Flutter,Go,React and GraphQL, enhancing overall performance and user experience.",
-        "Implemented scalable architecture and efficient API integrations, streamlining data flow across multiple modules for smooth functionality.",
-        "Collaborated with cross-functional teams to design and deliver intuitive, high-quality interfaces aligned with business goals and user needs."
+        "Led development of cross-platform mobile and web applications using Flutter, Go, React, and GraphQL.",
+        "Built scalable architecture and optimized API integrations for smooth data flow.",
+        "Collaborated with teams to deliver high-quality, user-friendly interfaces."
       ]
     }
   ],
-  skills: [
-    "Flutter","Go","React","Svelte", "TypeScript", "GraphQL",
-    "REST API", "Node.js", "SQL", "Dart", "JavaScript"
-  ],
-  projects: [
-  {
-    name: "Brewszila App",
-    description: "Cross-platform mobile application",
-    points: [
-      "Developed a cross-platform mobile application using Flutter, delivering a seamless and engaging user experience across Android and iOS.",
-      "Integrated GraphQL APIs for dynamic data handling, improving responsiveness and real-time updates throughout the app.",
-      "Designed and optimized modular UI components, enabling scalable development and consistent design across multiple features."
-    ],
-    tools: ["Flutter","Go" ,"GraphQL", "Dart"]
-  },
-  {
-    name: "Brewszila CMS",
-    description: "Web-based content management system",
-    points: [
-      "Developed a React-based web dashboard to manage outlets, menus, documents, and user data through a clean and responsive interface.",
-      "Implemented GraphQL integrations and modular services, ensuring secure and efficient data operations across multiple modules.",
-      "Enhanced admin workflows with real-time validations, file uploads, and automated syncing, improving overall system usability and reliability."
-    ],
-    tools: ["React","Go","GraphQL", "JavaScript"]
-  },
 
-  // ✅ Newly added projects (appended below)
-  {
-    name: "FieldForce Offline First App",
-    description: "Offline-first task management mobile application",
-    points: [
-      "Developed a production-ready offline-first Flutter application enabling seamless task management with automatic background synchronization between local storage and cloud.",
-      "Designed and implemented a queue-based synchronization architecture (CREATE, UPDATE, DELETE) ensuring reliable data consistency during intermittent or no internet connectivity.",
-      "Utilized Hive for efficient local database storage and Firebase Firestore for cloud persistence, enabling fast offline access and scalable backend integration.",
-      "Built a background SyncManager service to process queued operations and handle real-time synchronization based on network state detection.",
-      "Implemented reactive UI updates using GetX state management, including live sync status indicators and dynamic filtering/search functionality."
-    ],
-    tools: ["Flutter", "Dart", "Hive", "Firebase Firestore", "GetX"]
-  },
-  {
-    name: "Task & Attendance Management System",
-    description: "Full-stack employee attendance and task tracking system",
-    points: [
-      "Developed an end-to-end attendance management system with Flutter frontend and Go backend supporting secure employee check-in and check-out functionality.",
-      "Engineered RESTful APIs using Gorilla Mux and GORM, ensuring clean architecture and scalable database operations.",
-      "Implemented JWT-based authentication and role-based authorization to secure endpoints and protect sensitive employee data.",
-      "Designed efficient backend workflows to manage attendance logs, user roles, and task tracking with high reliability."
-    ],
-    tools: ["Flutter", "Go", "GORM", "Gorilla Mux", "JWT", "REST API"]
-  }
-],
+  skills: [
+    "Flutter",
+    "Go",
+    "React",
+    "Svelte",
+    "TypeScript",
+    "GraphQL",
+    "REST API",
+    "Node.js",
+    "SQL",
+    "Dart",
+    "JavaScript"
+  ],
+
+  projects: [
+    {
+      name: "Brewszila App",
+      description: "Cross-platform mobile application",
+      points: [
+        "Developed a cross-platform mobile application using Flutter for Android and iOS.",
+        "Integrated GraphQL APIs for real-time data handling.",
+        "Built reusable and scalable UI components."
+      ],
+      tools: ["Flutter", "Go", "GraphQL", "Dart"]
+    },
+    {
+      name: "Brewszila CMS",
+      description: "Web-based content management system",
+      points: [
+        "Developed a React-based admin dashboard for managing outlets and data.",
+        "Implemented GraphQL services for efficient data operations.",
+        "Added validations, file uploads, and improved admin workflows."
+      ],
+      tools: ["React", "Go", "GraphQL", "JavaScript"]
+    },
+
+    {
+      name: "FieldForce Offline First App",
+      description: "Offline-first task management mobile application",
+      points: [
+        "Built an offline-first Flutter app with automatic background sync.",
+        "Implemented queue-based sync (CREATE, UPDATE, DELETE) for reliability.",
+        "Used Hive for local storage and Firebase Firestore for cloud sync.",
+        "Developed SyncManager for handling background operations.",
+        "Added GetX-based reactive UI with sync status and search."
+      ],
+      tools: ["Flutter", "Dart", "Hive", "Firebase Firestore", "GetX"]
+    },
+    {
+      name: "Task & Attendance Management System",
+      description: "Employee attendance and task tracking system",
+      points: [
+        "Developed Flutter frontend with Go backend for attendance tracking.",
+        "Built REST APIs using Gorilla Mux and GORM.",
+        "Implemented JWT authentication and role-based authorization.",
+        "Managed attendance logs and secure user workflows."
+      ],
+      tools: ["Flutter", "Go", "GORM", "Gorilla Mux", "JWT", "REST API"]
+    }
+  ],
+
+  tools: [
+    "Postman",
+    "Bruno",
+    "Hasura",
+    "TablePlus",
+    "PostgreSQL",
+    "Keycloak",
+    "Firebase"
+  ]
 };
 
 export default portfolioData;
