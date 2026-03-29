@@ -74,7 +74,7 @@ const portfolioData: PortfolioData = {
     {
       company: "Brewszila Technologies Pvt. Ltd.",
       position: "Mobile App Developer",
-      period: "2025 - PRESENT",
+      period: "2025 - 2026",
       points: [
         "Led development of cross-platform mobile and web applications using Flutter, Go, React, and GraphQL.",
         "Built scalable architecture and optimized API integrations for smooth data flow.",
@@ -109,17 +109,6 @@ const portfolioData: PortfolioData = {
       tools: ["Flutter", "Go", "GraphQL", "Dart"]
     },
     {
-      name: "Brewszila CMS",
-      description: "Web-based content management system",
-      points: [
-        "Developed a React-based admin dashboard for managing outlets and data.",
-        "Implemented GraphQL services for efficient data operations.",
-        "Added validations, file uploads, and improved admin workflows."
-      ],
-      tools: ["React", "Go", "GraphQL", "JavaScript"]
-    },
-
-    {
       name: "FieldForce Offline First App",
       description: "Offline-first task management mobile application",
       points: [
@@ -141,6 +130,16 @@ const portfolioData: PortfolioData = {
         "Managed attendance logs and secure user workflows."
       ],
       tools: ["Flutter", "Go", "GORM", "Gorilla Mux", "JWT", "REST API"]
+    },
+    {
+      name: "Brewszila CMS",
+      description: "Web-based content management system",
+      points: [
+        "Developed a React-based admin dashboard for managing outlets and data.",
+        "Implemented GraphQL services for efficient data operations.",
+        "Added validations, file uploads, and improved admin workflows."
+      ],
+      tools: ["React", "Go", "GraphQL", "JavaScript"]
     }
   ],
 
