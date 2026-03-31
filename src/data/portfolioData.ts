@@ -74,7 +74,7 @@ const portfolioData: PortfolioData = {
     {
       company: "Brewszila Technologies Pvt. Ltd.",
       position: "Mobile App Developer",
-      period: "2025 - 2026",
+      period: "2024 - 2026",
       points: [
         "Led development of cross-platform mobile and web applications using Flutter, Go, React, and GraphQL.",
         "Built scalable architecture and optimized API integrations for smooth data flow.",
