@@ -97,66 +97,78 @@ const portfolioData: PortfolioData = {
     "JavaScript"
   ],
 
-projects: [
-  {
-    name: "Brewszila App",
-    description: "Cross-platform mobile application",
-    points: [
-      "Developed a cross-platform mobile application using Flutter for Android and iOS.",
-      "Integrated GraphQL APIs for real-time data handling.",
-      "Built reusable and scalable UI components."
-    ],
-    tools: ["Flutter", "Go", "GraphQL", "Dart"]
-  },
-  {
-    name: "FieldForce Offline First App",
-    description: "Offline-first task management mobile application",
-    points: [
-      "Built an offline-first Flutter app with automatic background sync.",
-      "Implemented queue-based sync (CREATE, UPDATE, DELETE) for reliability.",
-      "Used Hive for local storage and Firebase Firestore for cloud sync.",
-      "Developed SyncManager for handling background operations.",
-      "Added GetX-based reactive UI with sync status and search."
-    ],
-    tools: ["Flutter", "Dart", "Hive", "Firebase Firestore", "GetX"]
-  },
+  projects: [
+    {
+      name: "Brewszila App",
+      description: "Cross-platform mobile application",
+      points: [
+        "Developed a cross-platform mobile application using Flutter for Android and iOS.",
+        "Integrated GraphQL APIs for real-time data handling.",
+        "Built reusable and scalable UI components."
+      ],
+      tools: ["Flutter", "Go", "GraphQL", "Dart"]
+    },
+    {
+      name: "FieldForce Offline First App",
+      description: "Offline-first task management mobile application",
+      points: [
+        "Built an offline-first Flutter app with automatic background sync.",
+        "Implemented queue-based sync (CREATE, UPDATE, DELETE) for reliability.",
+        "Used Hive for local storage and Firebase Firestore for cloud sync.",
+        "Developed SyncManager for handling background operations.",
+        "Added GetX-based reactive UI with sync status and search."
+      ],
+      tools: ["Flutter", "Dart", "Hive", "Firebase Firestore", "GetX"]
+    },
+    {
+      name: "AI Resume Analyzer",
+      description: "AI-powered resume analysis application",
+      points: [
+        "Built an AI-powered resume analyzer using Flutter and Node.js backend.",
+        "Implemented PDF parsing and integrated Gemini API for ATS scoring and analysis.",
+        "Generated structured insights including strengths, weaknesses, and skill gaps.",
+        "Designed REST API for resume upload and real-time AI processing.",
+        "Handled JSON parsing, error handling, and seamless frontend-backend integration."
+      ],
+      tools: ["Flutter", "Node.js", "Express", "Gemini API", "REST API"]
+    },
+    {
+      name: "Task & Attendance Management System",
+      description: "Employee attendance and task tracking system",
+      points: [
+        "Developed Flutter frontend with Go backend for attendance tracking.",
+        "Built REST APIs using Gorilla Mux and GORM.",
+        "Implemented JWT authentication and role-based authorization.",
+        "Managed attendance logs and secure user workflows."
+      ],
+      tools: ["Flutter", "Go", "GORM", "Gorilla Mux", "JWT", "REST API"]
+    },
+    {
+      name: "Brewszila CMS",
+      description: "Web-based content management system",
+      points: [
+        "Developed a React-based admin dashboard for managing outlets and data.",
+        "Implemented GraphQL services for efficient data operations.",
+        "Added validations, file uploads, and improved admin workflows."
+      ],
+      tools: ["React", "Go", "GraphQL", "JavaScript"]
+    }
+  ],
 
-  // 🔥 NEW PROJECT (3rd position)
-  {
-    name: "AI Resume Analyzer",
-    description: "AI-powered resume analysis application",
-    points: [
-      "Built an AI-powered resume analyzer using Flutter and Node.js backend.",
-      "Implemented PDF parsing and integrated Gemini API for ATS scoring and analysis.",
-      "Generated structured insights including strengths, weaknesses, and skill gaps.",
-      "Designed REST API for resume upload and real-time AI processing.",
-      "Handled JSON parsing, error handling, and seamless frontend-backend integration."
-    ],
-    tools: ["Flutter", "Node.js", "Express", "Gemini API", "REST API"]
-  },
-
-  {
-    name: "Task & Attendance Management System",
-    description: "Employee attendance and task tracking system",
-    points: [
-      "Developed Flutter frontend with Go backend for attendance tracking.",
-      "Built REST APIs using Gorilla Mux and GORM.",
-      "Implemented JWT authentication and role-based authorization.",
-      "Managed attendance logs and secure user workflows."
-    ],
-    tools: ["Flutter", "Go", "GORM", "Gorilla Mux", "JWT", "REST API"]
-  },
-  {
-    name: "Brewszila CMS",
-    description: "Web-based content management system",
-    points: [
-      "Developed a React-based admin dashboard for managing outlets and data.",
-      "Implemented GraphQL services for efficient data operations.",
-      "Added validations, file uploads, and improved admin workflows."
-    ],
-    tools: ["React", "Go", "GraphQL", "JavaScript"]
-  }
-]
+  tools: [
+    "Flutter",
+    "React",
+    "Go",
+    "Node.js",
+    "TypeScript",
+    "GraphQL",
+    "REST API",
+    "Firebase",
+    "Git",
+    "VS Code",
+    "Android Studio",
+    "Postman"
+  ]
 };
 
 export default portfolioData;
