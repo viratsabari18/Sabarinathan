@@ -33,7 +33,7 @@ export default function App() {
 
   // Function to open resume in new window
   const openResume = () => {
-    window.open('https://drive.google.com/file/d/1vo6oqaZaNlfVlBuFYJTLh7j1X3H_1j7Y/view?usp=sharing', '_blank', 'noopener,noreferrer')
+    window.open('https://drive.google.com/file/d/1VeaWhnw7rOAb_lO3reyQChJJ8WRCKLpy/view?usp=sharing', '_blank', 'noopener,noreferrer')
   }
 
   if (isLoading) {
