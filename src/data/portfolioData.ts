@@ -45,7 +45,7 @@ const portfolioData: PortfolioData = {
     title: "FULL STACK DEVELOPER",
     phone: "+91 9345772036",
     email: "sabarivirat2@gmail.com",
-    address: "Musiri, Trichy, Tamilnadu",
+    address: "Bangalore",
     linkedin: "sabarinathan-s"
   },
 
