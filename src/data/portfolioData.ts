@@ -100,35 +100,33 @@ const portfolioData: PortfolioData = {
     }
   ],
 
-  skills: [
-    "Flutter",
-    "Dart",
-    "Android",
-    "iOS",
-    "Firebase",
-    "Firestore",
-    "GraphQL",
-    "REST APIs",
-    "Bloc",
-    "Provider",
-    "GetX",
-    "Riverpod",
-    "Redux",
-    "Hive",
-    "Keycloak",
-    "JWT Authentication",
-    "Role-Based Access Control",
-    "Clean Architecture",
-    "MVVM",
-    "Repository Pattern",
-    "GitHub Actions",
-    "React.js",
-    "Node.js",
-    "Go",
-    "JavaScript",
-    "SQL",
-    "MongoDB"
-  ],
+skills: [
+  "Flutter",
+  "Dart",
+  "Android",
+  "iOS",
+  "Bloc",
+  "Provider",
+  "GetX",
+  "Riverpod",
+  "Redux",
+  "Firebase",
+  "Firestore",
+  "GraphQL",
+  "REST APIs",
+  "Hive",
+  "Keycloak",
+  "JWT",
+  "Clean Architecture",
+  "MVVM",
+  "Repository Pattern",
+  "React.js",
+  "Node.js",
+  "Go",
+  "JavaScript",
+  "SQL",
+  "MongoDB"
+],
 
   projects: [
     {
@@ -159,14 +157,17 @@ const portfolioData: PortfolioData = {
         "Developed real-time booking and earnings management workflows improving operational efficiency.",
         "Implemented Provider state management for real-time updates and optimized UI performance."
       ],
-      tools: [
-        "Flutter",
-        "Dart",
-        "Firebase",
-        "REST APIs",
-        "Provider",
-        "SharedPreferences"
-      ]
+ tools: [
+  "Git",
+  "GitHub Actions",
+  "Google Play Console",
+  "Postman",
+  "Bruno",
+  "Android Studio",
+  "VS Code",
+  "Draw.io",
+  "PgAdmin"
+]
     },
 
     {
