@@ -1,4 +1,4 @@
-// Projects.tsx - Updated with blue theme
+// Projects.tsx - Updated with blue theme and store buttons
 import React from 'react'
 import { motion } from 'framer-motion'
 
@@ -45,12 +45,42 @@ export default function Projects({ items }: {items: any[]}) {
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">{project.name}</h3>
                     <p className="text-gray-400">{project.description}</p>
+                    
+                    {/* Store Buttons - Live App Links */}
+                    {(project.playStore || project.appStore) && (
+                      <div className="flex gap-3 mt-3">
+                        {project.playStore && (
+                          <a
+                            href={project.playStore}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white transition-all duration-300 text-sm font-medium"
+                          >
+                            <i className="fab fa-google-play"></i>
+                            Play Store
+                          </a>
+                        )}
+
+                        {project.appStore && (
+                          <a
+                            href={project.appStore}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-white transition-all duration-300 text-sm font-medium"
+                          >
+                            <i className="fab fa-apple"></i>
+                            App Store
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </div>
+                  {/* Optional: You can uncomment this for a link icon */}
                   {/* <motion.div 
                     className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center"
                     whileHover={{ rotate: 15, scale: 1.1 }}
-                  > */}
-                    {/* <i className="fas fa-external-link-alt text-white"></i>
+                  >
+                    <i className="fas fa-external-link-alt text-white"></i>
                   </motion.div> */}
                 </div>
 
