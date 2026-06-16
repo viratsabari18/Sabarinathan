@@ -173,21 +173,25 @@ export default function Skills({ skills, tools }: {skills: string[], tools: stri
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { 
-                name: 'Mobile Development', 
-                icon: 'mobile-alt',
-                description: 'Building cross-platform mobile applications with Flutter and React Native'
-              },
-              { 
-                name: 'Frontend Development', 
-                icon: 'desktop',
-                description: 'Creating responsive web applications using React, Svelte and TypeScript'
-              },
-              { 
-                name: 'Backend Integration', 
-                icon: 'server',
-                description: 'Designing and integrating APIs with GraphQL, REST and databases'
-              }
+              {
+    name: 'Mobile Development',
+    icon: 'mobile-alt',
+    description:
+      'Building scalable Android and iOS applications using Flutter, focusing on responsive UI, performance optimization, and seamless user experiences.'
+  },
+  {
+    name: 'State Management & Architecture',
+    icon: 'layer-group',
+    description:
+      'Implementing Bloc, Provider, GetX, and Riverpod with Clean Architecture, MVVM, and Repository Pattern for maintainable applications.'
+  },
+  {
+    name: 'Backend & API Integration',
+    icon: 'server',
+    description:
+      'Integrating REST APIs, GraphQL, Firebase, Firestore, authentication systems, and offline-first synchronization for production-ready apps.'
+  }
+         
             ].map((area, i) => (
               <motion.div
                 key={i}
