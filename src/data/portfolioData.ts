@@ -20,6 +20,9 @@ export interface Project {
   description: string;
   points: string[];
   tools?: string[];
+    playStore?: string;
+  appStore?: string;
+
 }
 
 export interface PortfolioData {
