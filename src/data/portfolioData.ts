@@ -145,7 +145,11 @@ skills: [
         "REST APIs",
         "Provider",
         "SharedPreferences"
-      ]
+      ],
+        playStore:
+    "https://play.google.com/store/apps/details?id=com.bz.brewszilla",
+  appStore:
+    "https://apps.apple.com/in/app/brewszilla/id6759702114"
     },
 
     {
