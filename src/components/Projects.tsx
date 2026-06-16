@@ -166,7 +166,7 @@ export default function Projects({ items }: {items: any[]}) {
                   OPTION 3: Card-Style Buttons with Badge (Premium & Informative)
                   Uncomment this and comment out the other options
                 */}
-                {/* {(project.playStore || project.appStore) && (
+                { {(project.playStore || project.appStore) && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {project.playStore && (
                       <motion.a
@@ -215,7 +215,7 @@ export default function Projects({ items }: {items: any[]}) {
                       </motion.a>
                     )}
                   </div>
-                )} */}
+                )} }
 
                 {/* Live Status Badge */}
                 {(project.playStore || project.appStore) && (
