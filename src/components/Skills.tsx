@@ -2,34 +2,49 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-// Icon mapping for skills
 const skillIcons: { [key: string]: string } = {
+  'Flutter': 'fas fa-mobile-screen',
+  'Dart': 'fas fa-code',
+  'Android': 'fab fa-android',
+  'iOS': 'fab fa-apple',
 
-  'Flutter': 'fas fa-mobile-screen',        // Mobile app focus
-  'Dart': 'fas fa-code',                     // No official Dart FA icon
-  'Go': 'fas fa-gears',                      // Backend / systems language
+  'Firebase': 'fas fa-fire',
+  'Firestore': 'fas fa-database',
+  'GraphQL': 'fas fa-diagram-project',
+  'REST APIs': 'fas fa-cloud-arrow-up',
 
-  'React': 'fab fa-react',
-  'Svelte': 'fas fa-bolt',                   // Lightweight & fast framework
-  'TypeScript': 'fas fa-file-code',          // Strongly-typed JS
-  'JavaScript': 'fab fa-js',
+  'Bloc': 'fas fa-layer-group',
+  'Provider': 'fas fa-share-nodes',
+  'GetX': 'fas fa-bolt',
+  'Riverpod': 'fas fa-water',
+  'Redux': 'fas fa-code-branch',
 
+  'Hive': 'fas fa-box-archive',
+  'Keycloak': 'fas fa-key',
+  'JWT': 'fas fa-shield-halved',
+
+  'Clean Architecture': 'fas fa-sitemap',
+  'MVVM': 'fas fa-cubes',
+  'Repository Pattern': 'fas fa-folder-tree',
+
+  'React.js': 'fab fa-react',
   'Node.js': 'fab fa-node-js',
-  'REST API': 'fas fa-cloud-arrow-up',       // API / networking
-  'GraphQL': 'fas fa-diagram-project',       // Data relationships
-  'SQL': 'fas fa-database'
-
-
+  'Go': 'fas fa-gears',
+  'JavaScript': 'fab fa-js',
+  'SQL': 'fas fa-database',
+  'MongoDB': 'fas fa-leaf'
 }
 
-// Icon mapping for tools
 const toolIcons: { [key: string]: string } = {
-  'Postman/Bruno': 'fas fa-rocket',
-  'Hasura': 'fas fa-bolt',
-  'TablePlus': 'fas fa-table',
-  'PostgreSQL': 'fas fa-database',
-  'Keyclock': 'fas fa-key',
-  'Firebase': 'fas fa-fire'
+  'Git': 'fab fa-git-alt',
+  'GitHub Actions': 'fab fa-github',
+  'Google Play Console': 'fab fa-google-play',
+  'Postman': 'fas fa-paper-plane',
+  'Bruno': 'fas fa-rocket',
+  'Android Studio': 'fab fa-android',
+  'VS Code': 'fas fa-code',
+  'Draw.io': 'fas fa-diagram-project',
+  'PgAdmin': 'fas fa-database'
 }
 
 export default function Skills({ skills, tools }: {skills: string[], tools: string[]}) {
