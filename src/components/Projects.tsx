@@ -86,7 +86,7 @@ export default function Projects({ items }: {items: any[]}) {
                   OPTION 1: Full Width Stacked Buttons (Clean & Bold)
                   Uncomment this and comment out the other options
                 */}
-                {(project.playStore || project.appStore) && (
+                /* {(project.playStore || project.appStore) && (
                   <div className="flex flex-col gap-3">
                     {project.playStore && (
                       <motion.a
@@ -119,14 +119,14 @@ export default function Projects({ items }: {items: any[]}) {
                       </motion.a>
                     )}
                   </div>
-                )}
+                )} */
 
 
                 {/* 
                   OPTION 2: Side-by-Side Pill Buttons (Modern & Compact)
                   Uncomment this and comment out the other options
                 */}
-                {/* {(project.playStore || project.appStore) && (
+                {{(project.playStore || project.appStore) && (
                   <div className="flex flex-wrap gap-3">
                     {project.playStore && (
                       <motion.a
@@ -159,7 +159,7 @@ export default function Projects({ items }: {items: any[]}) {
                       </motion.a>
                     )}
                   </div>
-                )} */}
+                )} 
 
 
                 {/* 
