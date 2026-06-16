@@ -36,15 +36,31 @@ const skillIcons: { [key: string]: string } = {
 }
 
 const toolIcons: { [key: string]: string } = {
+  // Source Control
   'Git': 'fab fa-git-alt',
   'GitHub Actions': 'fab fa-github',
-  'Google Play Console': 'fab fa-google-play',
-  'Postman': 'fas fa-paper-plane',
-  'Bruno': 'fas fa-rocket',
+
+  // IDEs
   'Android Studio': 'fab fa-android',
   'VS Code': 'fas fa-code',
+
+  // API Tools
+  'Postman': 'fas fa-paper-plane',
+  'Bruno': 'fas fa-rocket',
+
+  // Deployment
+  'Google Play Console': 'fab fa-google-play',
+
+  // Database / Admin
+  'PgAdmin': 'fas fa-database',
+
+  // Diagramming
   'Draw.io': 'fas fa-diagram-project',
-  'PgAdmin': 'fas fa-database'
+
+  // Optional extras
+  'Firebase': 'fas fa-fire',
+  'Keycloak': 'fas fa-key',
+  'GraphQL': 'fas fa-circle-nodes'
 }
 
 export default function Skills({ skills, tools }: {skills: string[], tools: string[]}) {
