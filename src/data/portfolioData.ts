@@ -1,3 +1,4 @@
+
 // data/portfolioData.ts
 
 export interface Education {
@@ -29,6 +30,7 @@ export interface PortfolioData {
     email: string;
     address: string;
     linkedin: string;
+    github?: string;
   };
   profileSummary: string;
   homeSummary: string;
@@ -42,132 +44,195 @@ export interface PortfolioData {
 const portfolioData: PortfolioData = {
   personalInfo: {
     name: "SABARINATHAN S",
-    title: "FULL STACK DEVELOPER",
+    title: "Flutter Developer",
     phone: "+91 9345772036",
     email: "sabarivirat2@gmail.com",
-    address: "Bangalore",
-    linkedin: "sabarinathan-s"
+    address: "Bengaluru, Karnataka",
+    linkedin: "sabarinathan-s-aaa86437b",
+    github: "viratsabari18"
   },
 
   profileSummary:
-    "Passionate Full Stack Developer with 1.5 years of experience in building scalable mobile and web applications. Specialized in Flutter, React, and modern web technologies. Strong expertise in cross-platform development, API integration, and delivering high-performance solutions.",
+    "Flutter Developer with 1.7+ years of experience building scalable Android and iOS applications using Flutter and Dart. Experienced in REST API integration, Firebase, GraphQL, state management (Bloc, Provider, GetX, Riverpod), authentication systems, and Clean Architecture. Proven ability to deliver production-ready mobile applications and collaborate effectively in Agile teams.",
 
   homeSummary:
-    "I transform ideas into powerful digital experiences. With expertise in Flutter, React, and modern web technologies, I build applications that are not just functional but delightful to use.",
+    "I build high-performance mobile applications with Flutter. From offline-first architectures and real-time synchronization to scalable production deployments, I focus on creating seamless user experiences across Android and iOS platforms.",
 
   education: [
     {
-      period: "2021-2024",
+      period: "2021 - 2024",
       institution: "GOVERNMENT COLLEGE OF ENGINEERING, SRIRANGAM",
-      degree: "Computer Science And Engineering",
-      score: "GPA: 7.8 / 10.0"
+      degree: "Bachelor of Engineering - Computer Science and Engineering",
+      score: "78%"
     },
     {
-      period: "2018-2021",
-      institution: "GOVERNMENT POLYTECHNIC COLLEGE TRICHY",
-      degree: "Computer Science",
-      score: "PER: 83%"
+      period: "2018 - 2021",
+      institution: "GOVERNMENT POLYTECHNIC COLLEGE, TRICHY",
+      degree: "Diploma in Computer Science",
+      score: "83%"
     }
   ],
 
   experience: [
     {
-      company: "Brewszila Technologies Pvt. Ltd.",
-      position: "Mobile App Developer",
-      period: "2024 - 2026",
+      company: "BrewsZilla Technologies",
+      position: "Software Engineer — Flutter Developer",
+      period: "Aug 2024 - Jan 2026",
       points: [
-        "Led development of cross-platform mobile and web applications using Flutter, Go, React, and GraphQL.",
-        "Built scalable architecture and optimized API integrations for smooth data flow.",
-        "Collaborated with teams to deliver high-quality, user-friendly interfaces."
+        "Delivered and enhanced production Flutter applications used by internal teams and external customers.",
+        "Designed and implemented 50+ responsive UI screens ensuring consistent user experience across Android and iOS devices.",
+        "Integrated 20+ REST API endpoints and implemented Keycloak-based RBAC authentication.",
+        "Improved application security and user access management through robust authentication workflows.",
+        "Collaborated with designers, QA engineers, and backend developers to reduce feature delivery time by 25%.",
+        "Built reusable UI components and adaptive layouts reducing development effort by approximately 30%."
+      ]
+    },
+    {
+      company: "IMM Recruitments",
+      position: "Flutter Developer Intern",
+      period: "Apr 2026 - Jun 2026",
+      points: [
+        "Developed and enhanced Flutter mobile application modules for Android and iOS platforms using Dart.",
+        "Resolved 20+ application bugs improving app stability and reducing user-reported issues.",
+        "Optimized UI rendering and API handling reducing screen load times by 30%.",
+        "Participated in code reviews and QA testing supporting faster deployments and fewer defects."
       ]
     }
   ],
 
   skills: [
     "Flutter",
-    "Go",
-    "React",
-    "Svelte",
-    "TypeScript",
-    "GraphQL",
-    "REST API",
-    "Node.js",
-    "SQL",
     "Dart",
-    "JavaScript"
+    "Android",
+    "iOS",
+    "Firebase",
+    "Firestore",
+    "GraphQL",
+    "REST APIs",
+    "Bloc",
+    "Provider",
+    "GetX",
+    "Riverpod",
+    "Redux",
+    "Hive",
+    "Keycloak",
+    "JWT Authentication",
+    "Role-Based Access Control",
+    "Clean Architecture",
+    "MVVM",
+    "Repository Pattern",
+    "GitHub Actions",
+    "React.js",
+    "Node.js",
+    "Go",
+    "JavaScript",
+    "SQL",
+    "MongoDB"
   ],
 
   projects: [
     {
-      name: "Brewszila App",
-      description: "Cross-platform mobile application",
+      name: "Unfazzed Service Booking App",
+      description: "Production-ready service booking platform",
       points: [
-        "Developed a cross-platform mobile application using Flutter for Android and iOS.",
-        "Integrated GraphQL APIs for real-time data handling.",
-        "Built reusable and scalable UI components."
+        "Engineered a Flutter application enabling customers to book and manage on-demand services.",
+        "Integrated OTP authentication, Firebase services, and 15+ REST APIs for booking, profile, and support functionalities.",
+        "Improved application performance through image caching and reusable widget architecture reducing screen load times by 35%.",
+        "Collaborated with backend teams to deliver 20+ production-ready features and support smooth deployments."
       ],
-      tools: ["Flutter", "Go", "GraphQL", "Dart"]
+      tools: [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "REST APIs",
+        "Provider",
+        "SharedPreferences"
+      ]
     },
+
+    {
+      name: "Unfazzed Professional Provider App",
+      description: "Provider platform for service professionals",
+      points: [
+        "Built a Flutter-based provider platform enabling service professionals to manage bookings, schedules, and customer interactions.",
+        "Implemented OTP authentication and Firebase services for secure onboarding and communication.",
+        "Developed real-time booking and earnings management workflows improving operational efficiency.",
+        "Implemented Provider state management for real-time updates and optimized UI performance."
+      ],
+      tools: [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "REST APIs",
+        "Provider",
+        "SharedPreferences"
+      ]
+    },
+
+    {
+      name: "BrewsZilla App",
+      description: "Published on Google Play Store and Apple App Store",
+      points: [
+        "Developed production-ready Flutter applications supporting business operations and customer engagement across multiple platforms.",
+        "Configured Keycloak authentication and Role-Based Access Control for secure access management.",
+        "Built reusable UI components and adaptive layouts while maintaining consistent UI standards.",
+        "Worked closely with designers, QA engineers, and backend developers in Agile environments to accelerate feature delivery."
+      ],
+      tools: [
+        "Flutter",
+        "Dart",
+        "GraphQL",
+        "Firebase",
+        "Keycloak",
+        "Provider"
+      ]
+    },
+
     {
       name: "FieldForce Offline First App",
-      description: "Offline-first task management mobile application",
+      description: "Offline-first task management application",
       points: [
-        "Built an offline-first Flutter app with automatic background sync.",
-        "Implemented queue-based sync (CREATE, UPDATE, DELETE) for reliability.",
-        "Used Hive for local storage and Firebase Firestore for cloud sync.",
-        "Developed SyncManager for handling background operations.",
-        "Added GetX-based reactive UI with sync status and search."
+        "Developed an offline-first Flutter application enabling seamless task management with automatic background synchronization.",
+        "Designed a queue-based sync architecture (CREATE, UPDATE, DELETE) ensuring reliable data consistency.",
+        "Integrated Hive and Firebase Firestore to support offline-first functionality and cloud synchronization.",
+        "Built a SyncManager service to process queued operations and improve synchronization reliability.",
+        "Implemented reactive UI updates using GetX including live sync status indicators and dynamic filtering."
       ],
-      tools: ["Flutter", "Dart", "Hive", "Firebase Firestore", "GetX"]
-    },
-    {
-      name: "AI Resume Analyzer",
-      description: "AI-powered resume analysis application",
-      points: [
-        "Built an AI-powered resume analyzer using Flutter and Node.js backend.",
-        "Implemented PDF parsing and integrated Gemini API for ATS scoring and analysis.",
-        "Generated structured insights including strengths, weaknesses, and skill gaps.",
-        "Designed REST API for resume upload and real-time AI processing.",
-        "Handled JSON parsing, error handling, and seamless frontend-backend integration."
-      ],
-      tools: ["Flutter", "Node.js", "Express", "Gemini API", "REST API"]
-    },
-    {
-      name: "Task & Attendance Management System",
-      description: "Employee attendance and task tracking system",
-      points: [
-        "Developed Flutter frontend with Go backend for attendance tracking.",
-        "Built REST APIs using Gorilla Mux and GORM.",
-        "Implemented JWT authentication and role-based authorization.",
-        "Managed attendance logs and secure user workflows."
-      ],
-      tools: ["Flutter", "Go", "GORM", "Gorilla Mux", "JWT", "REST API"]
-    },
-    {
-      name: "Brewszila CMS",
-      description: "Web-based content management system",
-      points: [
-        "Developed a React-based admin dashboard for managing outlets and data.",
-        "Implemented GraphQL services for efficient data operations.",
-        "Added validations, file uploads, and improved admin workflows."
-      ],
-      tools: ["React", "Go", "GraphQL", "JavaScript"]
+      tools: [
+        "Flutter",
+        "Dart",
+        "Hive",
+        "Firebase Firestore",
+        "GetX",
+        "Bloc"
+      ]
     }
   ],
 
   tools: [
     "Flutter",
-    "React",
-    "Go",
-    "Node.js",
-    "TypeScript",
-    "GraphQL",
-    "REST API",
+    "Dart",
     "Firebase",
+    "Firestore",
+    "GraphQL",
+    "REST APIs",
+    "Hive",
+    "Bloc",
+    "Provider",
+    "GetX",
+    "Riverpod",
+    "Redux",
+    "Keycloak",
+    "JWT Authentication",
     "Git",
-    "VS Code",
+    "GitHub Actions",
+    "Google Play Console",
+    "Postman",
+    "Bruno",
     "Android Studio",
-    "Postman"
+    "VS Code",
+    "Draw.io",
+    "PgAdmin"
   ]
 };
 
